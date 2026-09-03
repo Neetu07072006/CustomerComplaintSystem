@@ -1,0 +1,650 @@
+/* =========================================
+   RESOLVEAI ADMIN DASHBOARD
+   ========================================= */
+
+.admin-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(83, 78, 255, 0.10),
+      transparent 35%
+    ),
+    #020617;
+
+  color: #f8fafc;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.admin-header {
+  max-width: 1100px;
+  margin: 0 auto 22px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid
+    rgba(148, 163, 184, 0.15);
+}
+
+.admin-header h1 {
+  margin: 0 0 6px;
+
+  font-size: 21px;
+  font-weight: 700;
+
+  letter-spacing: -0.4px;
+}
+
+.admin-header p {
+  margin: 0;
+
+  color: #7ea2d6;
+
+  font-size: 11px;
+}
+
+.refresh-btn {
+  border: none;
+  border-radius: 9px;
+
+  background: #5146f5;
+
+  color: white;
+
+  padding: 10px 16px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 20px rgba(79, 70, 229, 0.25);
+
+  transition: 0.2s ease;
+}
+
+.refresh-btn:hover {
+  transform: translateY(-1px);
+
+  background: #6257ff;
+}
+
+
+/* =========================================
+   STATISTICS
+   ========================================= */
+
+.stats-grid {
+  max-width: 1100px;
+  margin: 0 auto 18px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, 1fr);
+
+  gap: 10px;
+}
+
+.stat-card {
+  min-height: 72px;
+
+  padding: 13px;
+
+  border-radius: 9px;
+
+  background: rgba(15, 23, 42, 0.78);
+
+  border: 1px solid
+    rgba(100, 116, 139, 0.20);
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 6px;
+}
+
+.stat-card span {
+  font-size: 9px;
+
+  color: #7da0d2;
+
+  text-align: center;
+}
+
+.stat-card strong {
+  font-size: 19px;
+
+  color: #ffffff;
+}
+
+
+/* Individual colors */
+
+.pending-card strong {
+  color: #facc15;
+}
+
+.review-card strong {
+  color: #818cf8;
+}
+
+.approved-card strong {
+  color: #22e5a0;
+}
+
+.rejected-card strong {
+  color: #ff6176;
+}
+
+.resolved-card strong {
+  color: #60a5fa;
+}
+
+
+/* =========================================
+   COMPLAINT SECTION
+   ========================================= */
+
+.complaints-section {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  padding: 16px;
+
+  border-radius: 12px;
+
+  background: rgba(8, 15, 32, 0.82);
+
+  border: 1px solid
+    rgba(100, 116, 139, 0.18);
+}
+
+.section-heading {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 12px;
+
+  padding-bottom: 11px;
+
+  border-bottom: 1px solid
+    rgba(148, 163, 184, 0.12);
+}
+
+.section-heading h2 {
+  margin: 0 0 3px;
+
+  font-size: 13px;
+}
+
+.section-heading p {
+  margin: 0;
+
+  color: #6f8db8;
+
+  font-size: 9px;
+}
+
+.section-heading > span {
+  color: #7798ff;
+
+  font-size: 9px;
+}
+
+
+/* =========================================
+   COMPLAINT LIST
+   ========================================= */
+
+.complaints-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+
+/* =========================================
+   COMPLAINT CARD
+   ========================================= */
+
+.complaint-card {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(15, 23, 42, 0.95),
+      rgba(9, 15, 30, 0.95)
+    );
+
+  border: 1px solid
+    rgba(100, 116, 139, 0.20);
+
+  border-radius: 9px;
+
+  padding: 13px;
+
+  transition: 0.2s ease;
+}
+
+.complaint-card:hover {
+  border-color:
+    rgba(99, 102, 241, 0.45);
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   COMPLAINT HEADER
+   ========================================= */
+
+.complaint-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding-bottom: 9px;
+
+  border-bottom: 1px solid
+    rgba(148, 163, 184, 0.12);
+}
+
+.complaint-header h3 {
+  margin: 0 0 4px;
+
+  font-size: 12px;
+
+  color: #ffffff;
+}
+
+.complaint-header small {
+  color: #526b96;
+
+  font-size: 8px;
+}
+
+.header-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+
+/* =========================================
+   STATUS BADGES
+   ========================================= */
+
+.status-badge,
+.priority-badge {
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.status-pending {
+  color: #facc15;
+
+  border: 1px solid
+    rgba(250, 204, 21, 0.30);
+
+  background: rgba(250, 204, 21, 0.08);
+}
+
+.status-review {
+  color: #a5b4fc;
+
+  border: 1px solid
+    rgba(129, 140, 248, 0.30);
+
+  background: rgba(129, 140, 248, 0.08);
+}
+
+.status-approved {
+  color: #34d399;
+
+  border: 1px solid
+    rgba(52, 211, 153, 0.30);
+
+  background: rgba(52, 211, 153, 0.08);
+}
+
+.status-rejected {
+  color: #fb7185;
+
+  border: 1px solid
+    rgba(251, 113, 133, 0.30);
+
+  background: rgba(251, 113, 133, 0.08);
+}
+
+.status-resolved {
+  color: #60a5fa;
+
+  border: 1px solid
+    rgba(96, 165, 250, 0.30);
+
+  background: rgba(96, 165, 250, 0.08);
+}
+
+
+/* =========================================
+   PRIORITY
+   ========================================= */
+
+.priority-low {
+  color: #cbd5e1;
+
+  border: 1px solid
+    rgba(203, 213, 225, 0.25);
+
+  background: rgba(203, 213, 225, 0.06);
+}
+
+.priority-medium {
+  color: #facc15;
+
+  border: 1px solid
+    rgba(250, 204, 21, 0.30);
+
+  background: rgba(250, 204, 21, 0.07);
+}
+
+.priority-high {
+  color: #ff6176;
+
+  border: 1px solid
+    rgba(255, 97, 118, 0.35);
+
+  background: rgba(255, 97, 118, 0.08);
+}
+
+
+/* =========================================
+   COMPLAINT DETAILS
+   ========================================= */
+
+.complaint-details {
+  display: grid;
+
+  grid-template-columns:
+    1.7fr
+    0.8fr
+    1fr
+    1fr
+    1.1fr
+    1fr;
+
+  gap: 12px;
+
+  padding-top: 10px;
+}
+
+.detail-item {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  min-width: 0;
+}
+
+.detail-item label {
+  font-size: 8px;
+
+  font-weight: 600;
+
+  color: #7ea4dc;
+}
+
+.detail-item span {
+  font-size: 9px;
+
+  color: #a9bad5;
+
+  line-height: 1.4;
+
+  word-break: break-word;
+}
+
+.eligible-date {
+  color: #60a5fa !important;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   MESSAGES
+   ========================================= */
+
+.dashboard-message,
+.dashboard-error {
+  padding: 25px;
+
+  text-align: center;
+
+  font-size: 11px;
+
+  color: #7790b8;
+}
+
+.dashboard-error {
+  color: #fb7185;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+  .stats-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+  .complaint-details {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  .admin-page {
+    padding: 15px;
+  }
+
+  .admin-header {
+    align-items: flex-start;
+
+    gap: 12px;
+  }
+
+  .stats-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .complaint-header {
+    align-items: flex-start;
+
+    gap: 10px;
+  }
+
+  .header-right {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .complaint-details {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+/* =====================================================
+   ADMIN DECISION
+===================================================== */
+
+.admin-decision {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.decision-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.decision-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.decision-buttons button {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.decision-buttons button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.decision-buttons button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* =====================================================
+   UNDER REVIEW
+===================================================== */
+
+.review-btn {
+  background: #343b68;
+  color: #ffffff;
+}
+
+.review-btn:hover:not(:disabled) {
+  background: #454e86;
+}
+
+/* =====================================================
+   APPROVE
+===================================================== */
+
+.approve-btn {
+  background: #087f5b;
+  color: white;
+}
+
+.approve-btn:hover:not(:disabled) {
+  background: #099268;
+}
+
+/* =====================================================
+   DECLINE
+===================================================== */
+
+.decline-btn {
+  background: #9b2c2c;
+  color: white;
+}
+
+.decline-btn:hover:not(:disabled) {
+  background: #c53030;
+}
+
+/* =====================================================
+   ACTION LOADING
+===================================================== */
+
+.action-loading {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #8b9cff;
+}
+
+/* =====================================================
+   STATUS BADGES
+===================================================== */
+
+.status-approved {
+  color: #00e6a0;
+}
+
+.status-declined {
+  color: #ff6b6b;
+}
+
+.status-review {
+  color: #8b9cff;
+}
+
+.status-pending {
+  color: #ffc107;
+}
+
+.status-failed {
+  color: #ff8a8a;
+}
+
+/* =====================================================
+   PRIORITY
+===================================================== */
+
+.priority-high {
+  color: #ff6b6b;
+}
+
+.priority-medium {
+  color: #ffc107;
+}
+
+.priority-low {
+  color: #00e6a0;
+}
+
+.priority-unknown {
+  color: #9ca3af;
+}

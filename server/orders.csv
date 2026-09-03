@@ -1,0 +1,21 @@
+orderId,customerName,productName,orderDate,deliveryDate,price,paymentMethod,status
+ORD1001,Riya Sharma,iPhone 15,01-08-2026,05-08-2026,65000,UPI,Delivered
+ORD1002,Aman Kumar,Boat Headphones,03-08-2026,07-08-2026,2500,Card,Delivered
+ORD1003,Neha Singh,Mouse,04-08-2026,08-08-2026,700,Cash,Delivered
+ORD1004,Rahul Verma,Laptop,05-08-2026,10-08-2026,55000,Card,Delivered
+ORD1005,Priya Gupta,Keyboard,06-08-2026,11-08-2026,1800,UPI,Delivered
+ORD1006,Vikram Rathore,Dell Monitor,07-08-2026,12-08-2026,12500,NetBanking,Delivered
+ORD1007,Sneha Patel,Power Bank,08-08-2026,11-08-2026,1500,UPI,Delivered
+ORD1008,Rohan Das,Smartwatch,10-08-2026,14-08-2026,3500,Card,Delivered
+ORD1009,Pooja Mehta,USB Cable,11-08-2026,13-08-2026,300,Cash,Delivered
+ORD1010,Aditya Joshi,Router,12-08-2026,16-08-2026,2200,UPI,Delivered
+ORD1011,Karan Malhotra,iPad Air,13-08-2026,18-08-2026,55000,Card,Delivered
+ORD1012,Anjali Desai,Earbuds,14-08-2026,17-08-2026,1999,UPI,Delivered
+ORD1013,Suresh Nair,Gaming Chair,15-08-2026,22-08-2026,14500,Card,Delivered
+ORD1014,Meera Reddy,Kindle Paperwhite,18-08-2026,21-08-2026,11000,NetBanking,Delivered
+ORD1015,Vikas Singh,Webcam,19-08-2026,23-08-2026,4500,Cash,Delivered
+ORD1016,Tara Banerjee,Mechanical Keyboard,20-08-2026,24-08-2026,6500,UPI,Delivered
+ORD1017,Gaurav Chawla,Bluetooth Speaker,21-08-2026,24-08-2026,3200,UPI,Delivered
+ORD1018,Nisha Jain,External HDD 2TB,22-08-2026,26-08-2026,5600,Card,Delivered
+ORD1019,Amitabh Bose,MacBook Pro,25-08-2026,30-08-2026,125000,NetBanking,Delivered
+ORD1020,Simran Kaur,Phone Case,26-08-2026,29-08-2026,450,Cash,Delivered

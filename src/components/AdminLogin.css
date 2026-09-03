@@ -1,0 +1,26 @@
+.security-info {
+  margin-top: 22px;
+  padding: 14px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  border-radius: 10px;
+  background: rgba(88, 119, 255, 0.06);
+  border: 1px solid rgba(88, 119, 255, 0.15);
+}
+
+.security-icon {
+  font-size: 20px;
+}
+
+.security-info strong {
+  color: #cdd7ef;
+  font-size: 12px;
+}
+
+.security-info p {
+  margin: 4px 0 0;
+  color: #71809d;
+  font-size: 11px;
+  line-height: 1.5;
+}
