@@ -22,7 +22,7 @@ function AdminDashboard() {
       console.log("Loading dashboard complaints...");
 
       const response = await fetch(
-        "http://localhost:5000/api/complaints"
+        "https://customercomplaintsystem.onrender.com/api/complaints"
       );
 
       const data = await response.json();
@@ -77,7 +77,7 @@ function AdminDashboard() {
       setActionLoading(caseId);
 
       const response = await fetch(
-        `http://localhost:5000/api/complaints/${caseId}/approve`,
+        `https://customercomplaintsystem.onrender.com/api/complaints${caseId}/approve`,
         {
           method: "PUT",
           headers: {
@@ -151,7 +151,7 @@ function AdminDashboard() {
       setActionLoading(caseId);
 
       const response = await fetch(
-        `http://localhost:5000/api/complaints/${caseId}/decline`,
+        `https://customercomplaintsystem.onrender.com/api/complaints${caseId}/decline`,
         {
           method: "PUT",
           headers: {
@@ -217,7 +217,7 @@ function AdminDashboard() {
       setActionLoading(caseId);
 
       const response = await fetch(
-        `http://localhost:5000/api/complaints/${caseId}/review`,
+        `https://customercomplaintsystem.onrender.com/api/complaints${caseId}/review`,
         {
           method: "PUT",
           headers: {
