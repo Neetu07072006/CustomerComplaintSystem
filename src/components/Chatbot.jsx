@@ -185,7 +185,7 @@ Please analyze this complaint and provide the appropriate next step for the cust
       // =================================================
 
       const response = await fetch(
-        "https://customercomplaintsystem.onrender.com/",
+        "https://customercomplaintsystem.onrender.com/api/chat",
         {
           method: "POST",
 
@@ -465,7 +465,7 @@ I'm now verifying your order and analyzing your complaint...
       console.log("================================");
 
       const response = await fetch(
-        "https://customercomplaintsystem.onrender.com/",
+        "https://customercomplaintsystem.onrender.com/api/chat",
         {
           method: "POST",
 
